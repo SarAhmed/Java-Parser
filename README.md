@@ -50,9 +50,15 @@ Method: refactorClassBody
   * Take as an input the order(zero-indexed) of the Class and the new body code.
   * Returns String containing the code after the transformation.
 ```
-p.refactorClassBody(0, "\\the new code" + p.getClassBody(0));
+p.refactorClassBody(0, "//he new code" + p.getClassBody(0));
 ```
-
+* Get All Constructor Declarations<br/>
+Method: getClasses
+  * Takes no input.
+  * Returns ArrayList of all constructors declerations as Strings.
+```
+p.getConstructorDecleration();
+```
 * Get All Methods Declarations<br/>
 Method: getMethodDeclerations
   * Takes no input.
@@ -73,7 +79,7 @@ Method: refactorMethodBody
   * Take as an input order(zero-indexed) of the Method and the new body code.
   * Returns String containing the code after the transformation.
 ```
-p.refactorMethodBody(0, "\\the new code" + p.getMethodBody(0));
+p.refactorMethodBody(0, "//the new code" + p.getMethodBody(0));
 ```
 * Get the main Method Body<br/>
 Method: getMainMethodBody
@@ -88,7 +94,7 @@ Method: refactorMethodBody
   * Takes as an input the new body code.
   * Returns String containing the code after the transformation.
 ```
-p.refactorMainMethodBody("\\the new code" + p.getMainMethodBody(0));
+p.refactorMainMethodBody("//the new code" + p.getMainMethodBody(0));
 ```
 
 * Get all Array Assignments (i.e. arr[index] = value;)<br/>
@@ -105,3 +111,4 @@ Method: refactorArrayAssignment
 ```
 p.refactorArrayAssignment(0,p.getArrayAssignment().get(0)+"//the new code");
 ```
+
