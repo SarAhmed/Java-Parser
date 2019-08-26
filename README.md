@@ -47,9 +47,61 @@ p.getClassBody(0);
 
 * Refactor/Transform Class Body<br/>
 Method: refactorClassBody
-  * Take as an input order(zero-indexed) of the Class and the new body code.
+  * Take as an input the order(zero-indexed) of the Class and the new body code.
   * Returns String containing the code after the transformation.
 ```
-p.refactorClassBody(0, "int x=0;" + p.getClassBody(0));
+p.refactorClassBody(0, "\\the new code" + p.getClassBody(0));
 ```
 
+* Get All Methods Declarations<br/>
+Method: getMethodDeclerations
+  * Takes no input.
+  * Returns ArrayList of all Methods declerations as Strings.
+```
+p.getMethodDeclerations();
+```
+* Get a Method Body<br/>
+Method: getMethodBody
+  * Take as an input the order(zero-indexed) of the Method.
+  * Return the Methods's Body as a String.
+```
+p.getMethodBody(0);
+```
+
+* Refactor/Transform Method Body<br/>
+Method: refactorMethodBody
+  * Take as an input order(zero-indexed) of the Method and the new body code.
+  * Returns String containing the code after the transformation.
+```
+p.refactorMethodBody(0, "\\the new code" + p.getMethodBody(0));
+```
+* Get the main Method Body<br/>
+Method: getMainMethodBody
+  * Take as an input the order(zero-indexed) of the Method.
+  * Return the Methods's Body as a String.
+```
+p.getMainMethodBody(0);
+```
+
+* Refactor/Transform the main Method Body<br/>
+Method: refactorMethodBody
+  * Takes as an input the new body code.
+  * Returns String containing the code after the transformation.
+```
+p.refactorMainMethodBody("\\the new code" + p.getMainMethodBody(0));
+```
+
+* Get all Array Assignments (i.e. arr[index] = value;)<br/>
+Method: getArrayAssignment
+  * Takes no input.
+  * Returns ArrayList of all Array assignments as Strings.
+```
+p.getArrayAssignment();
+```
+** Refactor/Transform an Array Assignment<br/>
+Method: refactorArrayAssignment
+  * Takes as an input the order(zero-indexed) of the array Assignment instruction and the new code to be add instead of the chosen array assignment.
+  * Returns String containing the code after the transformation.
+```
+p.refactorArrayAssignment(0,p.getArrayAssignment().get(0)+"//the new code");
+```
