@@ -9,15 +9,20 @@ Download the parser Package and add it to your project.
 
 ## Features
 first of all instatite the constructor
-	* using File
+* using input File
 ```
 File file = new File("BubbleSort.java");
 parser p=new  parser(file);
     
 ```
-* using String
-* Add Import Statments
+* using input String
 ```
+String s = "public class BubbleSort {}";
+parser p=new  parser(p);
+
+```
+* Add Import Statments<br/>
+`
 
 ```
 
