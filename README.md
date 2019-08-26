@@ -104,7 +104,7 @@ Method: getArrayAssignment
 ```
 p.getArrayAssignment();
 ```
-** Refactor/Transform an Array Assignment<br/>
+* Refactor/Transform an Array Assignment<br/>
 Method: refactorArrayAssignment
   * Takes as an input the order(zero-indexed) of the array Assignment instruction and the new code to be add instead of the chosen array assignment.
   * Returns String containing the code after the transformation.
