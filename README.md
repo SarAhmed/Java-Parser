@@ -21,15 +21,14 @@ parser p=new  parser(p);
 ```
 * Add Import Statments<br/>
 Method: addImportStatment<br/>
-Takes as an input the import statements to be added.<br/>
-Returns String containing the code after the addition
+  * Takes as an input the import statements to be added.<br/>
+  * Returns String containing the code after the addition
 ```
-p.addImportStatment(
-                "import java.io.BufferedReader;\r\n" +
+String imports = "import java.io.BufferedReader;\r\n" +
                 "import java.io.File;\r\n"+
                 "import java.io.FileNotFoundException;\r\n" +
-                "import java.io.FileReader;\r\n"
-                    );
+                "import java.io.FileReader;\r\n";
+p.addImportStatment(imports);
 ```
 
 
