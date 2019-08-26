@@ -8,4 +8,5 @@ A user friendly Java parser that can be used to
 Download the parser Package and add it to your project.
 
 ## Documentation
-For Documentation please follow this [link](https://github.com/SarAhmed/Java-Parser/blob/master/Documentation.md);
+For Documentation please follow this [link](https://github.com/SarAhmed/Java-Parser/blob/master/Documentation.md)
+
