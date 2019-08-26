@@ -91,18 +91,7 @@ public class parser {
 			+ IGNORE_SPACES + "\\(" + IGNORE_SPACES + "String" + ATLEAST_ONE_SPACE + VARIABLE_NAME + IGNORE_SPACES
 			+ "\\[" + IGNORE_SPACES + "\\]" + IGNORE_SPACES + "\\)" + IGNORE_SPACES + "\\{";
 
-	public static void main(String[] args) throws IOException {
-
-		File file = new File("C:\\Users\\SU\\Documents\\Projects\\internship\\task6\\BubbleSort.java");
-
-		String x = readFile(file);
-		x = formatCode(x);
-//
-//		System.out.println("\r\n".replaceAll(NOT_A_SPACE,"))))"));
-//		System.out.println(getArrayAssignment(x));
-
-	}
-
+	
 	public static String formatCode(String s) {
 
 		ArrayList<String> lineTerminators = new ArrayList<String>();
