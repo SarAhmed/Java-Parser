@@ -1,4 +1,4 @@
-first of all instatite the constructor
+first of all instatite the parser object
 * using input File
 ```
 File file = new File("BubbleSort.java");
@@ -9,6 +9,7 @@ parser p=new  parser(file);
 String s = "public class BubbleSort {}";
 parser p=new  parser(p);
 ```
+# Methods
 * Add Import Statments<br/>
 Method: addImportStatment<br/>
   * Takes as an input the import statements to be added.<br/>
