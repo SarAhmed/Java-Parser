@@ -32,23 +32,24 @@ p.addImportStatment(imports);
 ```
 * Get All Classes Declarations<br/>
 Method: getClasses
- * Takes no input.
- * Returns ArrayList of all classes declerations as Strings.
+  * Takes no input.
+  * Returns ArrayList of all classes declerations as Strings.
 ```
 p.getClasses();
 ```
-* Get a Class Body
-Method: getClassBody
- * Take as an input order(zero-indexed) of the Class.
- * Return the Class's Body as a String.
+* Get a Class Body<br/>
+Method: getClassBody=
+  * Take as an input order(zero-indexed) of the Class.
+  * Return the Class's Body as a String.
 ```
 p.getClassBody(0);
 ```
 
-* Refactor/Transform Class Body
+* Refactor/Transform Class Body<br/>
 Method: refactorClassBody
- * Take as an input order(zero-indexed) of the Class and the new body code.
- * Returns String containing the code after the transformation.
+  * Take as an input order(zero-indexed) of the Class and the new body code.
+  * Returns String containing the code after the transformation.
 ```
 p.refactorClassBody(0, "int x=0;" + p.getClassBody(0));
 ```
+
