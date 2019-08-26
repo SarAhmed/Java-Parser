@@ -12,18 +12,24 @@ first of all instatite the constructor
 * using input File
 ```
 File file = new File("BubbleSort.java");
-parser p=new  parser(file);
-    
+parser p=new  parser(file);   
 ```
 * using input String
 ```
 String s = "public class BubbleSort {}";
 parser p=new  parser(p);
-
 ```
 * Add Import Statments<br/>
-`
-
+Method: addImportStatment<br/>
+Takes as an input the import statements to be added.<br/>
+Returns String containing the code after the addition
+```
+p.addImportStatment(
+                "import java.io.BufferedReader;\r\n" +
+                "import java.io.File;\r\n"+
+                "import java.io.FileNotFoundException;\r\n" +
+                "import java.io.FileReader;\r\n"
+                    );
 ```
 
 
